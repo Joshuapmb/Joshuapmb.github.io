@@ -5,12 +5,11 @@
 <ul class="nav">
   
     <!-- Routing to about me page when my name is clicked -->
-    <li class="logo"
-      ><a routerLink="/aboutMe">
+    <li class="logo">
+      <a routerLink="/aboutMe" id = "myName">
         Joshua Bradley
       </a>
     </li>
-  
 
     <!-- Routing to about me page -->
     <a routerLink="/aboutMe">
@@ -48,4 +47,12 @@
       </li>
     </a>
 
-  </ul>
+    <!-- Burger menu button hidden, and shown when the screen is small -->
+    <button id = "burgerMenu" type="button">
+      <mat-icon>
+        menu
+      </mat-icon>
+    </button>
+
+</ul>
+
