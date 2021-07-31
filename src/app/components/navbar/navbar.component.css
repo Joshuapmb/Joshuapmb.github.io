@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #efeeee;
+}
+
+.nav{
+    width: 100vw;
+    height: 100px;
+    background-color: #efeeee;
+    box-shadow: 10px 10px 12px 0 rgba(0,0,0,.07);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 3rem;
+    list-style-type: none;
+    left: 0;
+    top: 0;
+    position: sticky;
+}
+
+li.logo{
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: dimgray;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.3), -2px -2px 4px rgba(255,255,255,1);
+}
+    
+  
+li:not(.logo){
+  margin: 0 1rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid rgba(255,255,255,.3);
+  box-shadow: 4px 4px 6px 0 rgba(0,0,0,.1), -4px -4px 6px rgba(255,255,255,1);
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;    
+  cursor: pointer;
+  transition: color 0.2s ease-out, transform 0.2s ease-out;
+  color: dimgray;
+}
+
+li:hover{
+  transform: scale(1.05);
+}
+
+li:focus{
+  outline: none;
+  transform: scale(0.95);
+  box-shadow: 4px 4px 10px 0 rgba(0,0,0,.1), -4px -4px 10px rgba(255,255,255,1), 4px 4px 10px 0 rgba(0,0,0,.1) inset, -4px -4px 10px rgba(255,255,255,1) inset;
+}
+
+li:hover, li:focus{
+  color: #187bcd;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+    
+    
+  
+  
