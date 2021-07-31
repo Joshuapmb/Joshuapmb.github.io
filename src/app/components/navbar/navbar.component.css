@@ -12,8 +12,6 @@ body{
     width: 100vw;
     height: 100px;
     background-color: #efeeee;
-    box-shadow: 10px 10px 12px 0 rgba(0,0,0,.07);
-    border-radius: 0 0 10px 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -58,7 +56,7 @@ li:hover, li:focus, #burgerMenu:hover, #burgerMenu:focus{
   color: #187bcd;
 }
 
-/* Clear a link formatting */
+/* Clear 'a' link formatting */
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
@@ -76,13 +74,9 @@ a, a:hover, a:focus, a:active {
     respace the elements
 */
 @media only screen and (max-width: 1034px) {
-  a{
+  a.mainLink{
     visibility: hidden;
     display: none;
-  }
-  #myName{
-    visibility: visible;
-    display: inline;
   }
   #burgerMenu{
     visibility: visible;
@@ -91,3 +85,34 @@ a, a:hover, a:focus, a:active {
     justify-content: space-between;
   }
 }
+
+
+/* Dropdown CSS from here */
+.dropdownLink{
+  margin: 0 0 0 0 !important;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #efeeee;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
