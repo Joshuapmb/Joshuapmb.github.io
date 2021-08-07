@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-myFunction() {
+showDropdown() {
   var dropdown = document.getElementById("myDropdown");
   if(dropdown){
     dropdown.classList.toggle("show");
