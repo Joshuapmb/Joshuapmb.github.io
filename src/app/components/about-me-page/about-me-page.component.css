@@ -1,0 +1,72 @@
+mat-card{
+    margin: 0 1rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid rgba(255,255,255,.3);
+    box-shadow: 4px 4px 6px 0 rgba(0,0,0,.1), -4px -4px 6px rgba(255,255,255,1);
+    border-radius: 100px;
+    transition: color 0.2s ease-out, transform 0.2s ease-out;
+    color: dimgray;
+    display: flex;
+  
+    /* Main fade-in animation */
+    animation: fadeIn linear 3s;
+
+    /* These properties make it so that the fade-in animation code works across various browsers and rendering engines. */
+    -webkit-animation: fadeIn linear 3s;
+    -moz-animation: fadeIn linear 3s;
+    -o-animation: fadeIn linear 3s;
+    -ms-animation: fadeIn linear 3s;
+}
+
+
+.column1{
+    float: left;
+    width: 70%;
+}
+
+.column2{
+    float: left;
+    width: 30%;
+}
+
+img{
+    margin-top: 10px !important;
+}
+
+
+
+
+
+
+
+/* Animation CSS from here: */
+
+/* Main animation */
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/* Mozilla Firefox prefix */
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/* Google Chrome and Apple Safari prefix */
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/* Opera prefix */
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/* Internet Explorer prefix */
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
